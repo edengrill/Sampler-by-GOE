@@ -6,15 +6,6 @@ import UniformTypeIdentifiers
 // Simple Audio Sampler v2.4 - With Waveform Visualization
 // Based on v2.3 with minimal waveform display
 
-@main
-struct SimpleAudioSamplerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
-
 struct ContentView: View {
     @StateObject private var audioManager = AudioManager()
     @StateObject private var setupGuide = SetupGuideManager()
